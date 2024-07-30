@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Figtree-SemiBold';
+    src: url(assets/fonts/static/Figtree-SemiBold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree-ExtraBold';
+    src: url(assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray_500: hsl(0, 0%, 42%);
+    --Gray_950: hsl(0, 0%, 7%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+html {
+    background-color: var(--Yellow);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: var(--White);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+    width: 327px;
+    height: 501px;
+    border: 1px solid black;
+    border-radius: 5%;
+    box-shadow: 8px 8px;
+    padding: 23px;
+}
+
+main {
+    border-radius: 5%;
+    height: 202px;
+    overflow: hidden;
+}
+
+main>img {
+    position: relative;
+    left: -27px;
+}
+
+h1 {
+    font-family: 'Figtree-ExtraBold';
+    font-size: 1.2em;
+}
+
+h2 {
+    background-color: var(--Yellow);
+    font-family: 'Figtree-ExtraBold';
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 0.75em;
+    border-radius: 5%;
+}
+
+h3 {
+    font-family: 'Figtree-SemiBold';
+    font-size: 0.75em;
+}
+
+p {
+    font-family: 'Figtree-SemiBold';
+    font-size: 0.87em;
+    line-height: 1.6;
+    color: var(--Gray_500);
+    
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+footer>img {
+    width: 32px;
+}
+
+footer>span {
+    font-family: 'Figtree-ExtraBold';
+    font-size: 14px;
+}
+
+@media screen and (min-width: 375px) {
+    * {
+        font-weight: 800;
+        font-size: 19px;
+    }
+
+    .container {
+        width: 384px;
+        height: 522px;
+    }
+    
+    main>img {
+        left: 1px;
+    }
+    
+    h1 {
+        color: var(--Yellow);
+    }
+}
+  
